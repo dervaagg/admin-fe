@@ -12,14 +12,11 @@ const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
 const Register = lazy(() => import('./pages/Register'))
 const Documentation = lazy(() => import('./pages/Documentation'))
 
-
 // Initializing different libraries
 initializeApp()
 
-
 // Check for login and initialize axios
 const token = checkAuth()
-
 
 function App() {
 
@@ -27,7 +24,6 @@ function App() {
     // 👆 daisy UI themes initialization
     themeChange(false)
   }, [])
-
 
   return (
     <>
